@@ -37,7 +37,7 @@
       stage('Nexus') {
 //    def scannerHome = tool 'SonarScanner 4.0';
         steps{
-        bat "c:/maven/bin/mvn -f clean package deploy"
+        bat "c:/maven/bin/mvn clean package deploy"
   
    
         }
