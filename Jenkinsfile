@@ -10,15 +10,15 @@
         }
        stage('maven compile'){
             steps{
-                                bat 'c:/maven/bin/mvn clean'
-                                bat 'c:/maven/bin/mvn compile'
+                                sh 'c:/maven/bin/mvn clean'
+                                sh 'c:/maven/bin/mvn compile'
 
             }
         }   
       stage('maven build'){
             steps{
-                               bat 'c:/maven/bin/mvn clean'
-                               bat 'c:/maven/bin/mvn package'
+                               sh 'c:/maven/bin/mvn clean'
+                               sh 'c:/maven/bin/mvn package'
 
 
             }
