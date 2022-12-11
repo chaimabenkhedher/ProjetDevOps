@@ -37,7 +37,15 @@
       stage('Nexus') {
 //    def scannerHome = tool 'SonarScanner 4.0';
         steps{
-        bat "c:/maven/bin/mvn clean package deploy:deploy-file -DgroupId=tn.esprit -DartifactId=ExamThourayaS2 -Dversion=0.0.1-SNAPSHOT -DgeneratePom=true -Dpackaging=jar -DrepositoryId=deploymentRepo -Durl=http://192.168.33.10:8081/repository/maven-snapshots/ -Dfile=target/ExamenThourayaS2-0.0.1-SNAPSHOT.jar -Dnexus.login=admin -Dnexus.password=nexus "
+        bat "c:/maven/bin/mvn clean package 
+          deploy:deploy-file -DgroupId=tn.esprit 
+          -DartifactId=ExamThourayaS2 
+          -Dversion=0.0.1-SNAPSHOT 
+          -DgeneratePom=true -Dpackaging=jar 
+          -DrepositoryId=deploymentRepo 
+          -Durl=http://192.168.33.10:8081/repository/maven-snapshots/ 
+          -Dfile=target/ExamenThourayaS2-0.0.1-SNAPSHOT.jar 
+          -Dnexus.login=admin -Dnexus.password=nexus "
   
    
         }
