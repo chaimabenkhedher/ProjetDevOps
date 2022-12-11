@@ -44,7 +44,7 @@
           -DgeneratePom=true -Dpackaging=jar 
           -DrepositoryId=deploymentRepo 
           -Durl=http://192.168.33.10:8081/repository/maven-snapshots/ 
-          -Dfile=target/ExamenThourayaS2-0.0.1-SNAPSHOT.jar 
+          -Dfile=target/ExamThourayaS2-0.0.1-SNAPSHOT.jar 
           -Dnexus.login=admin -Dnexus.password=nexus "
   
    
